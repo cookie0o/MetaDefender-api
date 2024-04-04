@@ -143,9 +143,9 @@ class MetaDefender_api():
                 # format response
                 return response.json()
             elif response.status_code == 404:
-                return str(response.status_code), ":Hash not found?"
+                return None, response.status_code, ":Hash not found?"
             elif response.status_code == 400:
-                return str(response.status_code), ":Invalid Hash?"
+                return None, response.status_code, ":Invalid Hash?"
             else:
                 return None, response.status_code
         except Exception as e:
