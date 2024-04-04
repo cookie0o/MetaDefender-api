@@ -1,6 +1,6 @@
 <div align=center>
   
-  # MetaDefender_api v1.0.2
+  # MetaDefender api v1.0.2
   
   **A simple MetaDefender Api wrapper**
 </div>
