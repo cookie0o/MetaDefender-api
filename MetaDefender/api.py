@@ -23,7 +23,7 @@ class MetaDefender_api():
                 # format response
                 return response.json()
             else:
-                return str(response.status_code)
+                return None, response.status_code
         except Exception as e:
             raise str(e)
 
@@ -45,7 +45,7 @@ class MetaDefender_api():
                 # format response
                 return response.json()
             else:
-                return str(response.status_code)
+                return None, response.status_code
         except Exception as e:
             raise str(e)
 
@@ -72,7 +72,7 @@ class MetaDefender_api():
                 # format response
                 return requests.get(url, headers=header).json()
             else:
-                return str(response.status_code)
+                return None, response.status_code
         except Exception as e:
             raise e
 
@@ -117,7 +117,7 @@ class MetaDefender_api():
                     # format response
                     return response.json()
             else:
-                return str(response.status_code)
+                return None, response.status_code
             
             # return_with_results: True proceed
             return MetaDefender_api.Fetch_analysis_result(response.json()["data_id"], key)
@@ -147,6 +147,6 @@ class MetaDefender_api():
             elif response.status_code == 400:
                 return str(response.status_code), ":Invalid Hash?"
             else:
-                return str(response.status_code)
+                return None, response.status_code
         except Exception as e:
             raise e
