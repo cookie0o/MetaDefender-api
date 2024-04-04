@@ -1,6 +1,6 @@
 <div align=center>
   
-  # MetaDefender_api v1.0.0
+  # MetaDefender-api v1.0.1
   
   **A simple MetaDefender Api wrapper**
 </div>
@@ -16,5 +16,5 @@ go to the wiki on the Github Page [here](https://github.com/sch-raphael/MetaDefe
 - your done!
 
 **from [pip](https://pypi.org/project/MetaDefender_api/)**
-- run: `pip install MetaDefender_api`
+- run: `pip install MetaDefender-api`
 - your done!
