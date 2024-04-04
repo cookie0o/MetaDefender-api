@@ -4,8 +4,8 @@ import os
 
 api_url = "https://api.metadefender.com/v4/"
 
+# main 
 class MetaDefender_api():
-    # get Info about account api limits etc.
     def Apikey_info(key=""):
         url = api_url+"apikey/"
         try:
